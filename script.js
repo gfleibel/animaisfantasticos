@@ -1,19 +1,46 @@
-const tabMenu = document.querySelectorAll('.js-tabmenu li');
-const tabContent = document.querySelectorAll('.js-tabcontent section');
+const activeClass = 'active'
+// tab menu
 
-if(tabMenu.length && tabContent.length) {
-  tabContent[0].classList.add('active');
+function initTabNav() {
+  const tabMenu = document.querySelectorAll('.js-tabmenu li');
+  const tabContent = document.querySelectorAll('.js-tabcontent section');
 
-  function activeTab(index) {
-    tabContent.forEach((section) => {
-      section.classList.remove('active');
+  if(tabMenu.length && tabContent.length) {
+    tabContent[0].classList.add(activeClass);
+
+    function activeTab(index) {
+      tabContent.forEach((section) => {
+        section.classList.remove(activeClass);
+      });
+      tabContent[index].classList.add(activeClass);
+    };
+
+    tabMenu.forEach((itemMenu, index) => {
+      itemMenu.addEventListener('click', () => {
+        activeTab(index);
+      });
     });
-    tabContent[index].classList.add('active');
-  };
+  }
+};
+initTabNav();
 
-  tabMenu.forEach((itemMenu, index) => {
-    itemMenu.addEventListener('click', () => {
-      activeTab(index);
-    });
-  });
-}
+// accordion list
+
+function initAccordion() {
+  const accordionList = document.querySelectorAll('.js-accordion dt');
+
+  if (accordionList.length){
+    accordionList[0].nextElementSibling.classList.add(activeClass);
+
+    function activeAccordion() {
+      this.classList.add(activeClass);
+      this.nextElementSibling.classList.toggle(activeClass);
+    };
+
+    accordionList.forEach((item) => {
+      item.addEventListener('click', activeAccordion);
+    })
+  }
+};
+
+initAccordion();
