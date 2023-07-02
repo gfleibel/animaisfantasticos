@@ -69,3 +69,28 @@ function initSoftScroll() {
 };
 
 initSoftScroll();
+
+// scroll animation
+
+function initScrollAnimation() {
+  const sections = document.querySelectorAll('.js-scroll');
+
+  if(sections.length) {
+    sections[0].classList.add(activeClass);
+
+    function scrollAnimation() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = (sectionTop - (window.innerHeight * 0.6)) < 0;
+        if (isSectionVisible) {
+          section.classList.add(activeClass);
+        } else {
+          section.classList.remove(activeClass);
+        }
+      });
+    }
+    window.addEventListener('scroll', scrollAnimation);
+  };
+};
+
+initScrollAnimation();
