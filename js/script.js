@@ -4,10 +4,11 @@ import initSoftScroll from "./modules/soft-scroll.js";
 import initTabNav from "./modules/tab-nav.js";
 import initScrollAnimation from "./modules/scroll-animation.js";
 import initModal from "./modules/modal.js";
-
+import initTooltip from "./modules/tooltip.js";
 
 initTabNav();
 initSoftScroll();
 initAccordion();
 initScrollAnimation();
 initModal();
+initTooltip();
