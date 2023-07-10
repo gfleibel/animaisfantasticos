@@ -6,7 +6,7 @@ export default function initAccordion() {
     accordionList[0].nextElementSibling.classList.add(activeClass);
 
     function activeAccordion() {
-      this.classList.add(activeClass);
+      this.classList.toggle(activeClass);
       this.nextElementSibling.classList.toggle(activeClass);
     };
 
