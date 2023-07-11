@@ -13,4 +13,4 @@ initAccordion();
 initScrollAnimation();
 initModal();
 initTooltip();
-// initDropdownMenu();
+initDropdownMenu();
