@@ -7,6 +7,8 @@ import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
+import initAnimateNumbers from "./modules/animateNumbers.js";
+import initWorkingHours from "./modules/working-hours.js";
 
 initTabNav();
 initSoftScroll();
@@ -16,3 +18,5 @@ initModal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
+initAnimateNumbers();
+initWorkingHours();

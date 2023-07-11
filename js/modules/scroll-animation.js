@@ -10,7 +10,7 @@ export default function initScrollAnimation() {
         const isSectionVisible = (sectionTop - (window.innerHeight * 0.6)) < 0;
         if (isSectionVisible) {
           section.classList.add(activeClass);
-        } else {
+        } else if(section.classList.contains(activeClass)) {
           section.classList.remove(activeClass);
         }
       });
