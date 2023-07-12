@@ -313,3 +313,11 @@ body {
 [data-semana].open::after{
   background: #3f4;
 }
+
+.btc-preco{
+  background: rgb(0, 79, 168);
+  padding: .2rem .5rem;
+  font-weight: bold;
+  border-radius: 2px;
+  color: #fff;
+}

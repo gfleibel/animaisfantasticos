@@ -10,6 +10,7 @@ import initMenuMobile from "./modules/menu-mobile.js";
 import initAnimateNumbers from "./modules/animateNumbers.js";
 import initWorkingHours from "./modules/working-hours.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
+import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
 initTabNav();
 initSoftScroll();
@@ -22,3 +23,4 @@ initMenuMobile();
 initAnimateNumbers();
 initWorkingHours();
 initFetchAnimais();
+initFetchBitcoin();
