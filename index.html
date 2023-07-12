@@ -10,120 +10,167 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
-  <nav class="menu js-menu">
-    <ul>
-      <li><a href="#animais">Animais</a></li>
-      <li><a href="#faq">Faq</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="https://www.github.com/gfleibel/animaisfantasticos" target="_blank">Github →</a></li>
-    </ul>
-  </nav>
-  <section class="grid-section animais js-scroll" id="animais">
-    <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
-      <li>
-        <img src="img/imagem1.jpg">
-      </li>
-      <li>
-        <img src="img/imagem2.jpg">
-      </li>
-      <li>
-        <img src="img/imagem3.jpg">
-      </li>
-      <li>
-        <img src="img/imagem4.jpg">
-      </li>
-      <li>
-        <img src="img/imagem5.jpg">
-      </li>
-      <li>
-        <img src="img/imagem6.jpg">
-      </li>
-    </ul>
-    <div class="animais-descricao js-tabcontent">
-      <section>
-        <h2>Raposa</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
-          por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do
-          qual a raposa vermelha é a mais comum.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-      </section>
+  <div class="grid-container">
+    <nav class="menu" data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown><a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://www.github.com/gfleibel/animaisfantasticos" target="_blank">Github →</a></li>
+        <li><a href="#" data-modal="open">Login</a></li>
+      </ul>
+    </nav>
+    <section class="grid-section animais" data-anime="scroll" id="animais">
+      <h1 class="titulo">Animais Fantásticos</h1>
+      <ul class="animais-lista" data-tab="menu">
+        <li>
+          <img src="img/imagem1.jpg">
+        </li>
+        <li>
+          <img src="img/imagem2.jpg">
+        </li>
+        <li>
+          <img src="img/imagem3.jpg">
+        </li>
+        <li>
+          <img src="img/imagem4.jpg">
+        </li>
+        <li>
+          <img src="img/imagem5.jpg">
+        </li>
+        <li>
+          <img src="img/imagem6.jpg">
+        </li>
+      </ul>
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>Raposa</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
+            por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do
+            qual a raposa vermelha é a mais comum.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+        </section>
 
-      <section>
-        <h2>Esquilo</h2>
-        <p>Os esquilos são pequenos mamíferos roedores que pertencem à família Sciuridae. São conhecidos por sua agilidade e habilidade em escalar árvores.</p>
-        <p>Eles possuem um corpo compacto, cauda peluda e olhos grandes adaptados para visão diurna.</p>
-        <p>Existem várias espécies de esquilos em todo o mundo, incluindo o esquilo-vermelho, o esquilo-cinzento e o esquilo-terrestre.</p>
-        <p>Os esquilos se alimentam principalmente de sementes, nozes e frutas, e armazenam comida em seus ninhos para os períodos de escassez.</p>
-      </section>
+        <section data-anime="show-right">
+          <h2>Esquilo</h2>
+          <p>Os esquilos são pequenos mamíferos roedores que pertencem à família Sciuridae. São conhecidos por sua agilidade e habilidade em escalar árvores.</p>
+          <p>Eles possuem um corpo compacto, cauda peluda e olhos grandes adaptados para visão diurna.</p>
+          <p>Existem várias espécies de esquilos em todo o mundo, incluindo o esquilo-vermelho, o esquilo-cinzento e o esquilo-terrestre.</p>
+          <p>Os esquilos se alimentam principalmente de sementes, nozes e frutas, e armazenam comida em seus ninhos para os períodos de escassez.</p>
+        </section>
 
-      <section>
-        <h2>Urso</h2>
-        <p>Os ursos são mamíferos de grande porte que pertencem à família Ursidae. Eles têm um corpo robusto, membros poderosos e garras afiadas.</p>
-        <p>Existem várias espécies de ursos, como o urso-pardo, o urso-negro, o urso-polar e o urso-panda.</p>
-        <p>Os ursos são conhecidos por serem animais fortes e adaptáveis, capazes de viver em uma variedade de habitats, desde florestas até regiões polares.</p>
-        <p>Sua dieta varia dependendo da espécie e do habitat, e pode incluir peixes, frutas, raízes, insetos e carne.</p>
-      </section>
+        <section data-anime="show-down">
+          <h2>Urso</h2>
+          <p>Os ursos são mamíferos de grande porte que pertencem à família Ursidae. Eles têm um corpo robusto, membros poderosos e garras afiadas.</p>
+          <p>Existem várias espécies de ursos, como o urso-pardo, o urso-negro, o urso-polar e o urso-panda.</p>
+          <p>Os ursos são conhecidos por serem animais fortes e adaptáveis, capazes de viver em uma variedade de habitats, desde florestas até regiões polares.</p>
+          <p>Sua dieta varia dependendo da espécie e do habitat, e pode incluir peixes, frutas, raízes, insetos e carne.</p>
+        </section>
 
-      <section>
-        <h2>Lobo</h2>
-        <p>Os lobos são mamíferos pertencentes à família Canidae e são parentes próximos dos cães domésticos.</p>
-        <p>Eles vivem em grupos sociais chamados de matilhas e são conhecidos por sua comunicação vocal complexa e habilidades de caça em equipe.</p>
-        <p>Os lobos têm uma aparência distinta, com um corpo esbelto, pernas longas, focinho alongado e uma pelagem densa e geralmente cinza.</p>
-        <p>Esses animais carnívoros se alimentam principalmente de presas como cervos, alces e bisões.</p>
-      </section>
+        <section data-anime="show-down">
+          <h2>Lobo</h2>
+          <p>Os lobos são mamíferos pertencentes à família Canidae e são parentes próximos dos cães domésticos.</p>
+          <p>Eles vivem em grupos sociais chamados de matilhas e são conhecidos por sua comunicação vocal complexa e habilidades de caça em equipe.</p>
+          <p>Os lobos têm uma aparência distinta, com um corpo esbelto, pernas longas, focinho alongado e uma pelagem densa e geralmente cinza.</p>
+          <p>Esses animais carnívoros se alimentam principalmente de presas como cervos, alces e bisões.</p>
+        </section>
 
-      <section>
-        <h2>Macaco</h2>
-        <p>Os macacos são primatas pertencentes à ordem dos primatas e à subordem dos haplorrinos.</p>
-        <p>Eles têm uma grande diversidade de espécies e são encontrados em várias partes do mundo, incluindo florestas tropicais, savanas e montanhas.</p>
-        <p>Os macacos têm braços longos, pernas poderosas e mãos habilidosas que lhes permitem se locomover e manipular objetos com facilidade.</p>
-        <p>Além disso, eles têm cérebros altamente desenvolvidos e são conhecidos por exibir comportamentos sociais complexos.</p>
-      </section>
+        <section data-anime="show-down">
+          <h2>Macaco</h2>
+          <p>Os macacos são primatas pertencentes à ordem dos primatas e à subordem dos haplorrinos.</p>
+          <p>Eles têm uma grande diversidade de espécies e são encontrados em várias partes do mundo, incluindo florestas tropicais, savanas e montanhas.</p>
+          <p>Os macacos têm braços longos, pernas poderosas e mãos habilidosas que lhes permitem se locomover e manipular objetos com facilidade.</p>
+          <p>Além disso, eles têm cérebros altamente desenvolvidos e são conhecidos por exibir comportamentos sociais complexos.</p>
+        </section>
 
-      <section>
-        <h2>Leão</h2>
-        <p>Os leões são grandes felinos que pertencem à família Felidae e são conhecidos por sua juba característica nos machos adultos.</p>
-        <p>Eles são encontrados principalmente nas savanas da África e em algumas partes da Ásia.</p>
-        <p>Os leões são animais sociais que vivem em grupos chamados de "coalizões" ou "manadas".</p>
-        <p>Eles são predadores de topo e se alimentam principalmente de grandes ungulados, como zebras, antílopes e búfalos.</p>
-      </section>
+        <section data-anime="show-down">
+          <h2>Leão</h2>
+          <p>Os leões são grandes felinos que pertencem à família Felidae e são conhecidos por sua juba característica nos machos adultos.</p>
+          <p>Eles são encontrados principalmente nas savanas da África e em algumas partes da Ásia.</p>
+          <p>Os leões são animais sociais que vivem em grupos chamados de "coalizões" ou "manadas".</p>
+          <p>Eles são predadores de topo e se alimentam principalmente de grandes ungulados, como zebras, antílopes e búfalos.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="grid-section faq" data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-anime="accordion">
+        <dt class="active">Qual a idade dos animais?</dt>
+        <dd>Isso varia dependendo da espécie. As raposas, por exemplo, geralmente vivem de 2 a 5 anos na natureza, mas podem viver mais tempo em cativeiro.</dd>
+        <dt>Eles são fantásticos?</dt>
+        <dd>Sim, cada animal tem suas próprias características e habilidades fascinantes que os tornam especiais em seu próprio caminho.</dd>
+        <dt>Qual a diferença?</dt>
+        <dd>A diferença entre os animais está principalmente nas suas características físicas, comportamento, habitat e dieta.</dd>
+        <dt>Como proteger?</dt>
+        <dd>A proteção dos animais envolve a conservação de seus habitats naturais, a implementação de leis e regulamentos para evitar a caça e o comércio ilegal, e a educação sobre a importância da preservação da vida selvagem.</dd>
+      </dl>
+    </section>
+
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid">
+        <div class="numero-animal">
+          <h3>Lobos</h3>
+          <span data-numero>4874</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Raposas</h3>
+          <span data-numero>5374</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Esquilos</h3>
+          <span data-numero>12340</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Ursos</h3>
+          <span data-numero>230</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section contato" data-anime="scroll" id="contato">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
+        <img src="img/mapa.png">
+      </div>
+      <ul class="dados">
+        <li>gfleibel@hotmail.com</li>
+        <li>+55 (11) 9999-9999</li>
+        <li>Rua Jericó, 193 - Vila Madalena</li>
+        <li>São Paulo - SP</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+      </ul>
+    </section>
+
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="close" class="close">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
     </div>
-  </section>
-
-  <section class="grid-section faq js-scroll" id="faq">
-    <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
-      <dt>Qual a idade dos animais?</dt>
-      <dd>Isso varia dependendo da espécie. As raposas, por exemplo, geralmente vivem de 2 a 5 anos na natureza, mas podem viver mais tempo em cativeiro.</dd>
-      <dt>Eles são fantásticos?</dt>
-      <dd>Sim, cada animal tem suas próprias características e habilidades fascinantes que os tornam especiais em seu próprio caminho.</dd>
-      <dt>Qual a diferença?</dt>
-      <dd>A diferença entre os animais está principalmente nas suas características físicas, comportamento, habitat e dieta.</dd>
-      <dt>Como proteger?</dt>
-      <dd>A proteção dos animais envolve a conservação de seus habitats naturais, a implementação de leis e regulamentos para evitar a caça e o comércio ilegal, e a educação sobre a importância da preservação da vida selvagem.</dd>
-    </dl>
-  </section>
-
-  <section class="grid-section contato js-scroll" id="contato">
-    <h1 class="titulo">Contato</h1>
-    <div class="mapa">
-      <img src="img/mapa.png">
-    </div>
-    <ul class="dados">
-      <li>gfleibel@hotmail.com</li>
-      <li>+55 (11) 9999-9999</li>
-      <li>Rua Jericó, 193 - Vila Madalena</li>
-      <li>São Paulo - SP</li>
-    </ul>
-  </section>
-
-  <footer class="copy">
-    <p>Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
+</section>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
