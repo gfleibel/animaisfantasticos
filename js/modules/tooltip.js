@@ -4,7 +4,7 @@ export default function initTooltip() {
     item.addEventListener('mouseover', onMouseOver);
   });
 
-  function onMouseOver(event){
+  function onMouseOver(){
     const tooltipBox = createTooltipBox(this);
 
     onMouseMove.tooltipBox = tooltipBox;
@@ -38,4 +38,4 @@ export default function initTooltip() {
       this.tooltipBox.style.left = event.pageX + 10 + 'px';
     }
   }
-};
+}

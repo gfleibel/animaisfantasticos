@@ -6,14 +6,14 @@ export default function outsideClick(element, events, callback) {
     setTimeout(() => html.addEventListener(userEvent, handleOutsideClick));
     });
     element.setAttribute(outside, '');
-  };
+  }
   function handleOutsideClick(event) {
     if(!element.contains(event.target)) {
       element.removeAttribute(outside);
-      events.forEach((userEvent) => {
+      events.forEach(() => {
       html.removeEventListener('click', handleOutsideClick);
       callback();
       });
-    };
-  };
-};
+    }
+  }
+}

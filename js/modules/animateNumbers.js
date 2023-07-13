@@ -18,7 +18,6 @@ export default function initAnimateNumbers(){
 
   }
 
-
   function handleMutation(mutation){
     if(mutation[0].target.classList.contains('active')){
       observer.disconnect()
