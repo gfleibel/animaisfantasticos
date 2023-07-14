@@ -10,6 +10,7 @@ import initAnimateNumbers from "./modules/animateNumbers.js";
 import initWorkingHours from "./modules/working-hours.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
+import SlideNav from './modules/slide.js';
 
 initTabNav();
 initSoftScroll();
@@ -23,3 +24,8 @@ initAnimateNumbers();
 initWorkingHours();
 initFetchAnimais();
 initFetchBitcoin();
+
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
